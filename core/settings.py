@@ -117,6 +117,7 @@ SPA_DOMAIN = os.environ.get('SPA_DOMAIN')
     
 CORS_ALLOWED_ORIGINS = [
         SPA_DOMAIN,
+        'https://66049a97bc25966135c82d6c--helpful-salmiakki-fa0a00.netlify.app'
         'http://localhost:3000',
         'http://127.0.0.1:3000',
 ]
