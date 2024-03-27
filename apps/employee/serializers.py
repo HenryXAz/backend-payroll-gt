@@ -86,7 +86,7 @@ class DepartmentSerializer(serializers.ModelSerializer):
 class JobPositionSerializer(serializers.ModelSerializer):
     class Meta:
         model = JobPositionModel        
-        fields =[ 'name', 'description', 'company', 'is_active']
+        fields =[ 'id', 'name', 'description', 'company', 'is_active']
 
         def create(self, validate_data):
             return JobPositionModel.objects.create(**validate_data)
